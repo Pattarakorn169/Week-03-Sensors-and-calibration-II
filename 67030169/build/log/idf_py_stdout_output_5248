@@ -1,0 +1,19 @@
+Command: C:\Users\patkorn\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\ESP32\v5.5.1\esp-idf\tools/idf_monitor.py -p com4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\patkorn\Week-03-Sensors-and-calibration-II\67030169\build\LED_Blink.elf C:\Users\patkorn\Week-03-Sensors-and-calibration-II\67030169\build\bootloader\bootloader.elf --force-color -m 'C:\Users\patkorn\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\ESP32\v5.5.1\esp-idf\tools\idf.py' '-p' 'com4'
+oltage = 550 mV
+ADC Raw = 496, Voltage = 554 mV
+ADC Raw = 498, Voltage = 556 mV
+ADC Raw = 496, Voltage = 554 mV
+ADC Raw = 301, Voltage = 392 mV
+ADC Raw = 51, Voltage = 184 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 399, Voltage = 474 mV
+ADC Raw = 556, Voltage = 604 mV
+ADC Raw = 531, Voltage = 583 mV
+ADC Raw = 340, Voltage = 425 mV

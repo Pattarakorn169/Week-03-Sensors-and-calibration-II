@@ -1,0 +1,320 @@
+Command: C:\Users\patkorn\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\ESP32\v5.5.1\esp-idf\tools/idf_monitor.py -p com4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\patkorn\Week-03-Sensors-and-calibration-II\67030169\build\LED_Blink.elf C:\Users\patkorn\Week-03-Sensors-and-calibration-II\67030169\build\bootloader\bootloader.elf --force-color -m 'C:\Users\patkorn\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\ESP32\v5.5.1\esp-idf\tools\idf.py' '-p' 'com4'
+v:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jul 14 2026 11:03:23[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a36ch ( 41836) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001a394 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c794 vaddr=40080000 size=03884h ( 14468) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14a58h ( 84568) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034a80 vaddr=40083884 size=0972ch ( 38700) load[0m
+[0;32mI (158) esp_image: segment 5: paddr=0003e1b4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (184) cpu_start: Pro cpu start user code[0m
+[0;32mI (184) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (184) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     LED_Blink[0m
+[0;32mI (189) app_init: App version:      76fd201-dirty[0m
+[0;32mI (193) app_init: Compile time:     Jul 14 2026 11:02:30[0m
+[0;32mI (198) app_init: ELF file SHA256:  184174e6d...[0m
+[0;32mI (202) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2CE8 len 0002D318 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (252) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (290) main_task: Started on CPU0[0m
+[0;32mI (300) main_task: Calling app_main()[0m
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 43, Voltage = 178 mV
+ADC Raw = 51, Voltage = 185 mV
+ADC Raw = 36, Voltage = 172 mV
+ADC Raw = 44, Voltage = 179 mV
+ADC Raw = 46, Voltage = 180 mV
+ADC Raw = 71, Voltage = 201 mV
+ADC Raw = 62, Voltage = 194 mV
+ADC Raw = 30, Voltage = 167 mV
+ADC Raw = 132, Voltage = 252 mV
+ADC Raw = 167, Voltage = 282 mV
+ADC Raw = 216, Voltage = 323 mV
+ADC Raw = 347, Voltage = 432 mV
+ADC Raw = 476, Voltage = 540 mV
+ADC Raw = 609, Voltage = 651 mV
+ADC Raw = 742, Voltage = 763 mV
+ADC Raw = 903, Voltage = 897 mV
+ADC Raw = 1006, Voltage = 983 mV
+ADC Raw = 1243, Voltage = 1182 mV
+ADC Raw = 1431, Voltage = 1339 mV
+ADC Raw = 1638, Voltage = 1512 mV
+ADC Raw = 1906, Voltage = 1736 mV
+ADC Raw = 2118, Voltage = 1913 mV
+ADC Raw = 2233, Voltage = 2010 mV
+ADC Raw = 2313, Voltage = 2077 mV
+ADC Raw = 2305, Voltage = 2070 mV
+ADC Raw = 2345, Voltage = 2103 mV
+ADC Raw = 2343, Voltage = 2102 mV
+ADC Raw = 2329, Voltage = 2090 mV
+ADC Raw = 2387, Voltage = 2138 mV
+ADC Raw = 2369, Voltage = 2123 mV
+ADC Raw = 2379, Voltage = 2132 mV
+ADC Raw = 2368, Voltage = 2123 mV
+ADC Raw = 2357, Voltage = 2113 mV
+ADC Raw = 2375, Voltage = 2128 mV
+ADC Raw = 2405, Voltage = 2154 mV
+ADC Raw = 2350, Voltage = 2108 mV
+ADC Raw = 2395, Voltage = 2145 mV
+ADC Raw = 2411, Voltage = 2159 mV
+ADC Raw = 2395, Voltage = 2145 mV
+ADC Raw = 2381, Voltage = 2133 mV
+ADC Raw = 2343, Voltage = 2102 mV
+ADC Raw = 2399, Voltage = 2149 mV
+ADC Raw = 2386, Voltage = 2138 mV
+ADC Raw = 2402, Voltage = 2151 mV
+ADC Raw = 2383, Voltage = 2135 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2352, Voltage = 2109 mV
+ADC Raw = 2367, Voltage = 2122 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2356, Voltage = 2113 mV
+ADC Raw = 2385, Voltage = 2137 mV
+ADC Raw = 2407, Voltage = 2155 mV
+ADC Raw = 2357, Voltage = 2113 mV
+ADC Raw = 2416, Voltage = 2163 mV
+ADC Raw = 2355, Voltage = 2112 mV
+ADC Raw = 2366, Voltage = 2121 mV
+ADC Raw = 2385, Voltage = 2137 mV
+ADC Raw = 2368, Voltage = 2123 mV
+ADC Raw = 2417, Voltage = 2164 mV
+ADC Raw = 2395, Voltage = 2145 mV
+ADC Raw = 2371, Voltage = 2125 mV
+ADC Raw = 2405, Voltage = 2154 mV
+ADC Raw = 2401, Voltage = 2150 mV
+ADC Raw = 2395, Voltage = 2145 mV
+ADC Raw = 2395, Voltage = 2145 mV
+ADC Raw = 2386, Voltage = 2138 mV
+ADC Raw = 2410, Voltage = 2158 mV
+ADC Raw = 2365, Voltage = 2120 mV
+ADC Raw = 2413, Voltage = 2160 mV
+ADC Raw = 2387, Voltage = 2138 mV
+ADC Raw = 2325, Voltage = 2087 mV
+ADC Raw = 2363, Voltage = 2118 mV
+ADC Raw = 2341, Voltage = 2100 mV
+ADC Raw = 2383, Voltage = 2135 mV
+ADC Raw = 2365, Voltage = 2120 mV
+ADC Raw = 2379, Voltage = 2132 mV
+ADC Raw = 2385, Voltage = 2137 mV
+ADC Raw = 2355, Voltage = 2112 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2378, Voltage = 2131 mV
+ADC Raw = 2365, Voltage = 2120 mV
+ADC Raw = 2371, Voltage = 2125 mV
+ADC Raw = 2401, Voltage = 2150 mV
+ADC Raw = 2390, Voltage = 2141 mV
+ADC Raw = 2399, Voltage = 2149 mV
+ADC Raw = 2370, Voltage = 2124 mV
+ADC Raw = 2362, Voltage = 2118 mV
+ADC Raw = 2368, Voltage = 2123 mV
+ADC Raw = 2391, Voltage = 2142 mV
+ADC Raw = 2330, Voltage = 2091 mV
+ADC Raw = 2331, Voltage = 2092 mV
+ADC Raw = 2292, Voltage = 2059 mV
+ADC Raw = 2290, Voltage = 2057 mV
+ADC Raw = 2245, Voltage = 2020 mV
+ADC Raw = 2123, Voltage = 1918 mV
+ADC Raw = 1877, Voltage = 1712 mV
+ADC Raw = 1650, Voltage = 1522 mV
+ADC Raw = 1363, Voltage = 1282 mV
+ADC Raw = 1072, Voltage = 1039 mV
+ADC Raw = 678, Voltage = 709 mV
+ADC Raw = 366, Voltage = 448 mV
+ADC Raw = 22, Voltage = 160 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 20, Voltage = 159 mV
+ADC Raw = 14, Voltage = 154 mV
+ADC Raw = 32, Voltage = 169 mV
+ADC Raw = 34, Voltage = 170 mV
+ADC Raw = 16, Voltage = 155 mV
+ADC Raw = 48, Voltage = 182 mV
+ADC Raw = 32, Voltage = 169 mV
+ADC Raw = 21, Voltage = 160 mV
+ADC Raw = 50, Voltage = 184 mV
+ADC Raw = 46, Voltage = 180 mV
+ADC Raw = 59, Voltage = 191 mV
+ADC Raw = 50, Voltage = 184 mV
+ADC Raw = 80, Voltage = 209 mV
+ADC Raw = 105, Voltage = 230 mV
+ADC Raw = 112, Voltage = 236 mV
+ADC Raw = 133, Voltage = 253 mV
+ADC Raw = 229, Voltage = 334 mV
+ADC Raw = 320, Voltage = 410 mV
+ADC Raw = 446, Voltage = 515 mV
+ADC Raw = 592, Voltage = 637 mV
+ADC Raw = 737, Voltage = 758 mV
+ADC Raw = 890, Voltage = 886 mV
+ADC Raw = 1023, Voltage = 998 mV
+ADC Raw = 1276, Voltage = 1209 mV
+ADC Raw = 1573, Voltage = 1458 mV
+ADC Raw = 1885, Voltage = 1719 mV
+ADC Raw = 2164, Voltage = 1952 mV
+ADC Raw = 2329, Voltage = 2090 mV
+ADC Raw = 2357, Voltage = 2113 mV
+ADC Raw = 2401, Voltage = 2150 mV
+ADC Raw = 2401, Voltage = 2150 mV
+ADC Raw = 2386, Voltage = 2138 mV
+ADC Raw = 2389, Voltage = 2140 mV
+ADC Raw = 2405, Voltage = 2154 mV
+ADC Raw = 2384, Voltage = 2136 mV
+ADC Raw = 2369, Voltage = 2123 mV
+ADC Raw = 2385, Voltage = 2137 mV
+ADC Raw = 2353, Voltage = 2110 mV
+ADC Raw = 2377, Voltage = 2130 mV
+ADC Raw = 2374, Voltage = 2128 mV
+ADC Raw = 2352, Voltage = 2109 mV
+ADC Raw = 2351, Voltage = 2108 mV
+ADC Raw = 2345, Voltage = 2103 mV
+ADC Raw = 2307, Voltage = 2072 mV
+ADC Raw = 2333, Voltage = 2093 mV
+ADC Raw = 2261, Voltage = 2033 mV
+ADC Raw = 2264, Voltage = 2036 mV
+ADC Raw = 2320, Voltage = 2082 mV
+ADC Raw = 2251, Voltage = 2025 mV
+ADC Raw = 2253, Voltage = 2026 mV
+ADC Raw = 2211, Voltage = 1991 mV
+ADC Raw = 2158, Voltage = 1947 mV
+ADC Raw = 2214, Voltage = 1994 mV
+ADC Raw = 2192, Voltage = 1975 mV
+ADC Raw = 2160, Voltage = 1949 mV
+ADC Raw = 2137, Voltage = 1929 mV
+ADC Raw = 1747, Voltage = 1603 mV
+ADC Raw = 1807, Voltage = 1653 mV
+ADC Raw = 1742, Voltage = 1599 mV
+ADC Raw = 1162, Voltage = 1114 mV
+ADC Raw = 1313, Voltage = 1240 mV
+ADC Raw = 1374, Voltage = 1291 mV
+ADC Raw = 1392, Voltage = 1306 mV
+ADC Raw = 729, Voltage = 752 mV
+ADC Raw = 631, Voltage = 670 mV
+ADC Raw = 1197, Voltage = 1143 mV
+ADC Raw = 991, Voltage = 971 mV
+ADC Raw = 1231, Voltage = 1172 mV
+ADC Raw = 1143, Voltage = 1098 mV
+ADC Raw = 224, Voltage = 329 mV
+ADC Raw = 144, Voltage = 262 mV
+ADC Raw = 1995, Voltage = 1811 mV
+ADC Raw = 72, Voltage = 202 mV
+ADC Raw = 95, Voltage = 221 mV
+ADC Raw = 73, Voltage = 203 mV
+ADC Raw = 64, Voltage = 196 mV
+ADC Raw = 194, Voltage = 304 mV
+ADC Raw = 1818, Voltage = 1663 mV
+ADC Raw = 1835, Voltage = 1677 mV
+ADC Raw = 1429, Voltage = 1337 mV
+ADC Raw = 583, Voltage = 630 mV
+ADC Raw = 707, Voltage = 733 mV
+ADC Raw = 655, Voltage = 690 mV
+ADC Raw = 659, Voltage = 693 mV
+ADC Raw = 1347, Voltage = 1269 mV
+ADC Raw = 1296, Voltage = 1226 mV
+ADC Raw = 1265, Voltage = 1200 mV
+ADC Raw = 1277, Voltage = 1210 mV
+ADC Raw = 1255, Voltage = 1192 mV
+ADC Raw = 1258, Voltage = 1194 mV
+ADC Raw = 1192, Voltage = 1139 mV
+ADC Raw = 1156, Voltage = 1109 mV
+ADC Raw = 1155, Voltage = 1108 mV
+ADC Raw = 1163, Voltage = 1115 mV
+ADC Raw = 1137, Voltage = 1093 mV
+ADC Raw = 1178, Voltage = 1127 mV
+ADC Raw = 1101, Voltage = 1063 mV
+ADC Raw = 1105, Voltage = 1066 mV
+ADC Raw = 1088, Voltage = 1052 mV
+ADC Raw = 1055, Voltage = 1024 mV
+ADC Raw = 1062, Voltage = 1030 mV
+ADC Raw = 959, Voltage = 944 mV
+ADC Raw = 931, Voltage = 921 mV
+ADC Raw = 835, Voltage = 840 mV
+ADC Raw = 783, Voltage = 797 mV
+ADC Raw = 706, Voltage = 732 mV
+ADC Raw = 626, Voltage = 666 mV
+ADC Raw = 525, Voltage = 581 mV
+ADC Raw = 475, Voltage = 539 mV
+ADC Raw = 368, Voltage = 450 mV
+ADC Raw = 36, Voltage = 172 mV
+ADC Raw = 129, Voltage = 250 mV
+ADC Raw = 64, Voltage = 196 mV
+ADC Raw = 10, Voltage = 150 mV
+ADC Raw = 128, Voltage = 249 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 0, Voltage = 142 mV
+ADC Raw = 21, Voltage = 160 mV
+ADC Raw = 47, Voltage = 181 mV
+ADC Raw = 67, Voltage = 198 mV
+ADC Raw = 64, Voltage = 196 mV
+ADC Raw = 64, Voltage = 196 mV
